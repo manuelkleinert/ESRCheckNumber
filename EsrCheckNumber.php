@@ -4,7 +4,7 @@ class EsrCheckNumber
 {
     private $checkList = [0, 9, 4, 6, 8, 2, 7, 1, 3, 5];
 
-    private function getCheckNumber($referenceNumber)
+    public function getCheckNumber($referenceNumber)
     {
         $transferNumber = 0;
         $referenceNumber = str_replace(' ', '', $referenceNumber);
